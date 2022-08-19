@@ -103,4 +103,3 @@ npm run build
 ```
 firebase deploy
 ```
-Post your Tik Tok videos
