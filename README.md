@@ -245,3 +245,6 @@ Your Name - [@twitter_handle](https://twitter.com/SashenHasinduJ) - sashenjayath
 Project Link: [https://github.com/SashenJayathilaka/META-Messenger-Clone.git](https://github.com/SashenJayathilaka/META-Messenger-Clone.git)
 
 <hr />
+<br />
+
+<div align="center">Don't forget to leave a star ⭐️</div>
