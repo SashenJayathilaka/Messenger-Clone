@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "prisma generate"
+    "lint": "next lint"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
@@ -25,6 +24,7 @@
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
     "framer-motion": "^10.12.8",
+    "lodash": "^4.17.21",
     "next": "13.4.1",
     "next-auth": "^4.22.1",
     "next-cloudinary": "^4.10.0",
