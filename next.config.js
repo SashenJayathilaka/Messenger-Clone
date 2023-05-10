@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    domains: ["scontent.fcmb1-2.fna.fbcdn.net"],
-  },
   experimental: {
     appDir: true,
+    swcPlugins: [["next-superjson-plugin", {}]],
+  },
+  images: {
+    domains: [
+      "res.cloudinary.com",
+      "lh3.googleusercontent.com",
+      "dl.dropboxusercontent.com",
+    ],
   },
 };
 
