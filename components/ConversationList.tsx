@@ -74,13 +74,13 @@ function ConversationList({ initialItems, users }: Props) {
     pusherClient.bind("conversation:update", updateHandler);
     pusherClient.bind("conversation:remove", removeHandler);
 
-    return () => {
+    /*     return () => {
       pusherClient.unsubscribe(pusherKey);
       pusherClient.unbind("conversation:new", newHandler);
       pusherClient.unbind("conversation:update", updateHandler);
       pusherClient.unbind("conversation:remove", removeHandler);
-    };
-  }, [pusherKey, conversationId, router]);
+    }; */
+  }, [pusherKey, router]);
 
   return (
     <>
