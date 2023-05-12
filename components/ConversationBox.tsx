@@ -72,8 +72,10 @@ function ConversationBox({ data, selected }: Props) {
       }}
       onClick={handleClick}
       className={clsx(
-        `w-full relative flex items-center space-x-3 p-3 hover:bg-neutral-100 rounded-lg transition cursor-pointer`,
-        selected ? "bg-neutral-100" : "bg-white"
+        `w-full relative flex items-center space-x-3 p-3 hover:bg-neutral-100 dark:bg-black dark:hover:bg-neutral-900 rounded-lg transition cursor-pointer`,
+        selected
+          ? "bg-neutral-100 dark:bg-neutral-900"
+          : "bg-white dark:bg-black"
       )}
     >
       {data.isGroup ? (
@@ -84,11 +86,11 @@ function ConversationBox({ data, selected }: Props) {
       <div className="min-w-0 flex-0">
         <div className="focus:outline-none">
           <div className="flex justify-between items-center mb-1">
-            <p className="text-md text-gray-900 font-medium">
+            <p className="text-md text-gray-900 dark:text-gray-100 font-medium truncate">
               {data.name || otherUser.name}
             </p>
             {lastMessage?.createdAt && (
-              <p className="text-xs text-gray-400 font-light">
+              <p className="text-xs text-gray-400 font-light dark:text-gray-300 pl-2">
                 {format(new Date(lastMessage.createdAt), "p")}
               </p>
             )}
@@ -96,7 +98,9 @@ function ConversationBox({ data, selected }: Props) {
           <p
             className={clsx(
               `truncate text-sm`,
-              hasSeen ? "text-gray-500" : "text-black font-medium"
+              hasSeen
+                ? "text-gray-500 dark:text-gray-400"
+                : "text-black dark:text-white font-medium"
             )}
           >
             {lastMessageText}

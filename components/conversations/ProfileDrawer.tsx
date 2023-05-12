@@ -76,13 +76,13 @@ function ProfileDrawer({ isOpen, onClose, data }: Props) {
                   leaveTo="translate-x-full"
                 >
                   <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
-                    <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                    <div className="flex h-full flex-col overflow-y-scroll bg-white dark:bg-black py-6 shadow-xl">
                       <div className="px-4 sm:px-6">
                         <div className="flex items-start justify-end">
                           <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
-                              className="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                              className="rounded-md bg-white dark:bg-black text-gray-400 dark:text-gray-200 hover:text-gray-500 dark:hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                               onClick={onClose}
                             >
                               <span className="sr-only">Close panel</span>
@@ -101,7 +101,7 @@ function ProfileDrawer({ isOpen, onClose, data }: Props) {
                             )}
                           </div>
                           <div>{title}</div>
-                          <div className="text-sm text-gray-500">
+                          <div className="text-sm text-gray-500 dark:text-gray-300">
                             {statusText}
                           </div>
                           <div className="flex gap-10 my-8">
@@ -109,10 +109,10 @@ function ProfileDrawer({ isOpen, onClose, data }: Props) {
                               onClick={() => setConfirmOpen(true)}
                               className="flex flex-col gap-3 items-center cursor-pointer hover:opacity-75"
                             >
-                              <div className="w-10 h-10 bg-neutral-100 rounded-full flex items-center justify-center">
+                              <div className="w-10 h-10 bg-neutral-100 dark:bg-neutral-900 rounded-full flex items-center justify-center">
                                 <IoTrash size={20} />
                               </div>
-                              <div className="text-sm font-light text-neutral-600">
+                              <div className="text-sm font-light text-neutral-600 dark:text-neutral-300">
                                 Delete
                               </div>
                             </div>
@@ -121,10 +121,10 @@ function ProfileDrawer({ isOpen, onClose, data }: Props) {
                             <dl className="space-y-8 px-4 sm:space-y-6 sm:px-6">
                               {data.isGroup && (
                                 <div>
-                                  <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0">
+                                  <dt className="text-sm font-medium text-gray-500 dark:text-gray-300 sm:w-40 sm:flex-shrink-0">
                                     Emails
                                   </dt>
-                                  <dd className="mt-1 text-sm text-gray-900 sm:col-span-2">
+                                  <dd className="mt-1 text-sm text-gray-900 dark:text-gray-100 sm:col-span-2">
                                     {data.users
                                       .map((user) => user.name)
                                       .join(", ")}
@@ -133,10 +133,10 @@ function ProfileDrawer({ isOpen, onClose, data }: Props) {
                               )}
                               {!data.isGroup && (
                                 <div>
-                                  <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0">
+                                  <dt className="text-sm font-medium text-gray-500 dark:text-gray-300 sm:w-40 sm:flex-shrink-0">
                                     Email
                                   </dt>
-                                  <dd className="mt-1 text-sm text-gray-900 sm:col-span-2">
+                                  <dd className="mt-1 text-sm text-gray-900 dark:text-gray-100 sm:col-span-2">
                                     {otherUser.email}
                                   </dd>
                                 </div>
@@ -145,10 +145,10 @@ function ProfileDrawer({ isOpen, onClose, data }: Props) {
                                 <>
                                   <hr />
                                   <div>
-                                    <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0">
+                                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-300 sm:w-40 sm:flex-shrink-0">
                                       Joined
                                     </dt>
-                                    <dd className="mt-1 text-sm text-gray-900 sm:col-span-2">
+                                    <dd className="mt-1 text-sm text-gray-900 dark:text-gray-100 sm:col-span-2">
                                       <time dateTime={joinDate}>
                                         {joinDate}
                                       </time>
