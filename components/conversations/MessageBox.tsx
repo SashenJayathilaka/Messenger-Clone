@@ -30,7 +30,7 @@ function MessageBox({ data, isLast }: Props) {
   const body = clsx(`flex flex-col gap-2`, isOwn && "items-end");
   const message = clsx(
     "text-sm w-fit overflow-hidden",
-    isOwn ? "bg-sky-500 text-white" : "bg-gray-100",
+    isOwn ? "bg-sky-500 text-white" : "bg-gray-100 dark:bg-gray-900",
     data.image ? "rounded-md p-0" : "rounded-full py-2 px-3"
   );
 
@@ -50,8 +50,10 @@ function MessageBox({ data, isLast }: Props) {
       </div>
       <div className={body}>
         <div className="flex items-center gap-1">
-          <div className="text-sm text-gray-500">{data.sender.name}</div>
-          <div className="text-xs text-gray-400">
+          <div className="text-sm text-gray-500 dark:text-gray-400">
+            {data.sender.name}
+          </div>
+          <div className="text-xs text-gray-400 dark:text-gray-300">
             {format(new Date(data.createdAt), "p")}
           </div>
         </div>
@@ -75,7 +77,7 @@ function MessageBox({ data, isLast }: Props) {
           )}
         </div>
         {isLast && isOwn && seenList.length > 0 && (
-          <div className="text-xs font-light text-gray-500">
+          <div className="text-xs font-light text-gray-500 dark:text-gray-400">
             {`Seen by ${seenList}`}
           </div>
         )}

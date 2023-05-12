@@ -15,7 +15,7 @@ function MobileFooter({}: Props) {
   }
 
   return (
-    <div className="fixed justify-between w-full bottom-0 z-40 flex items-center bg-white border-t-[1px] lg:hidden">
+    <div className="fixed justify-between w-full bottom-0 z-40 flex items-center bg-white border-t-[1px] dark:border-t-gray-600 lg:hidden">
       {routes.map((item) => (
         <MobileItem
           key={item.href}

@@ -1,6 +1,6 @@
 "use client";
 
-import ReactSelect from "react-select";
+import ReactSelect, { StylesConfig } from "react-select";
 
 type Props = {
   label: string;
@@ -11,9 +11,23 @@ type Props = {
 };
 
 function Select({ label, value, options, disabled, onChange }: Props) {
+  const colorStyles: StylesConfig = {
+    option: (styles) => ({
+      ...styles,
+      color: "#000",
+      cursor: "pointer",
+    }),
+    singleValue: (styles) => ({
+      ...styles,
+      color: "#000",
+      cursor: "pointer",
+    }),
+    menuPortal: (base) => ({ ...base, zIndex: 9999 }),
+  };
+
   return (
     <div className="z-[100]">
-      <label className="block text-sm font-medium leading-6 text-gray-900">
+      <label className="block text-sm font-medium leading-6 text-gray-900 dark:text-gray-100">
         {label}
       </label>
       <div className="mt-2">
@@ -24,9 +38,7 @@ function Select({ label, value, options, disabled, onChange }: Props) {
           isMulti
           options={options}
           menuPortalTarget={document.body}
-          styles={{
-            menuPortal: (base) => ({ ...base, zIndex: 9999 }),
-          }}
+          styles={colorStyles}
           classNames={{
             control: () => "text-sm",
           }}

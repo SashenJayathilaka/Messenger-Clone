@@ -6,6 +6,7 @@ import { FullMessageType } from "@/type";
 import axios from "axios";
 import { find } from "lodash";
 import { useEffect, useRef, useState } from "react";
+
 import MessageBox from "./MessageBox";
 
 type Props = {
@@ -63,7 +64,7 @@ function Body({ initialMessages }: Props) {
   }, [conversationId]);
 
   return (
-    <div className="flex-1 overflow-y-auto">
+    <div className="flex-1 overflow-y-auto dark:bg-black">
       {messages.map((message, index) => (
         <MessageBox
           isLast={index === messages.length - 1}
