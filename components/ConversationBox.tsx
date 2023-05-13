@@ -79,7 +79,7 @@ function ConversationBox({ data, selected }: Props) {
       )}
     >
       {data.isGroup ? (
-        <AvatarGroup users={data.users} />
+        <AvatarGroup name={data.name} />
       ) : (
         <Avatar user={otherUser} />
       )}
