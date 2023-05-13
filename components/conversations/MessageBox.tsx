@@ -31,7 +31,7 @@ function MessageBox({ data, isLast }: Props) {
   const message = clsx(
     "text-sm w-fit overflow-hidden",
     isOwn ? "bg-sky-500 text-white" : "bg-gray-100 dark:bg-gray-900",
-    data.image ? "rounded-md p-0" : "rounded-full py-2 px-3"
+    data.image ? "rounded-md p-0" : "rounded-2xl py-2 px-3"
   );
 
   return (
@@ -73,7 +73,7 @@ function MessageBox({ data, isLast }: Props) {
               className="object-cover cursor-pointer hover:scale-110 transition translate"
             />
           ) : (
-            <div>{data.body}</div>
+            <div className="max-w-[350px]">{data.body}</div>
           )}
         </div>
         {isLast && isOwn && seenList.length > 0 && (

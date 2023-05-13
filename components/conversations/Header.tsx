@@ -48,7 +48,7 @@ function Header({ conversation }: Props) {
             <HiChevronLeft size={32} />
           </Link>
           {conversation.isGroup ? (
-            <AvatarGroup users={conversation.users} />
+            <AvatarGroup name={conversation.name || otherUser.name} />
           ) : (
             <Avatar user={otherUser} />
           )}

@@ -95,7 +95,7 @@ function ProfileDrawer({ isOpen, onClose, data }: Props) {
                         <div className="flex flex-col items-center">
                           <div className="mb-2">
                             {data.isGroup ? (
-                              <AvatarGroup users={data.users} />
+                              <AvatarGroup name={data.name || otherUser.name} />
                             ) : (
                               <Avatar user={otherUser} />
                             )}

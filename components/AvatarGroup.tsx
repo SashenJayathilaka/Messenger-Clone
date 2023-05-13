@@ -4,34 +4,15 @@ import { User } from "@prisma/client";
 import Image from "next/image";
 
 type Props = {
-  users?: User[];
+  name?: string | null;
 };
 
-function AvatarGroup({ users = [] }: Props) {
-  const sliceUsers = users.slice(0, 3);
-
-  const positionMap = {
-    0: "top-0 left-[12px]",
-    1: "bottom-0",
-    2: "bottom-0 right-0",
-  };
-
+function AvatarGroup({ name }: Props) {
   return (
-    <div className="relative h-11 w-11">
-      {sliceUsers.map((user, index) => (
-        <div
-          key={index}
-          className={`absolute inline-block rounded-full overflow-hidden h-[21px] w-[21px] ${
-            positionMap[index as keyof typeof positionMap]
-          }`}
-        >
-          <Image
-            fill
-            src={user?.image || "/assets/placeholder.jpg"}
-            alt="Avatar"
-          />
-        </div>
-      ))}
+    <div className="relative">
+      <div className="relative inline-block rounded-full overflow-hidden h-9 w-9 md:h-11 md:w-11">
+        <img src={`https://ui-avatars.com/api/?name=${name}`} alt="Avatar" />
+      </div>
     </div>
   );
 }
