@@ -18,11 +18,11 @@ Messenger Clone: Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher,
 ![](https://img.shields.io/github/last-commit/SashenJayathilaka/Messenger-Clone)
 
 <h4>
-    <a href="https://github.com/SashenJayathilaka/META-Messenger-Clone/blob/master/README.md">Documentation</a>
+    <a href="https://github.com/SashenJayathilaka/Messenger-Clone/blob/master/README.md">Documentation</a>
   <span> · </span>
-    <a href="https://github.com/SashenJayathilaka/META-Messenger-Clone/issues">Report Bug</a>
+    <a href="https://github.com/SashenJayathilaka/Messenger-Clone/issues">Report Bug</a>
   <span> · </span>
-    <a href="https://github.com/SashenJayathilaka/META-Messenger-Clone/issues">Request Feature</a>
+    <a href="https://github.com/SashenJayathilaka/Messenger-Clone/issues">Request Feature</a>
   </h4>
 </div>
 
@@ -91,7 +91,7 @@ Messenger Clone: Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher,
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/180462270-ea4a249c-627c-4479-9431-5c3fd25454c4.png" alt="" width="30" height="30" /></a>
         </td>
                                 <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/185779974-a31a9f47-f8d3-42ea-b7f8-4a2971774615.png" alt="" width="30"height="30"/></a>
+<a href="#"><img src="https://th.bing.com/th/id/R.ce1b610b6ce7a92a69382007efb63b20?rik=JLsU1Wcqdv%2bGng&pid=ImgRaw&r=0" alt="" width="30"height="30"/></a>
         </td>
                                       <td>
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/229775276-a7cb148b-7fbd-4334-a07f-f2223bc49f62.png" alt="" width="30"height="30"/></a>
@@ -121,17 +121,23 @@ Messenger Clone: Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher,
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`REDIS_URL`
+`DATABASE_URL`
 
-`VERCEL_URL`
+`GOOGLE_CLIENT_ID`
 
-`FACEBOOK_CLIENT_ID`
+`GOOGLE_CLIENT_SECRET`
 
-`FACEBOOK_CLIENT_SECRET`
+`FACEBOOK_ID`
+
+`FACEBOOK_SECRET`
+
+`NEXTAUTH_SECRET`
 
 `NEXTAUTH_URL`
 
-`NEXT_PUBLIC_SECRET`
+`NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME`
+
+`NEXT_PUBLIC_LOOKUP_KEY`
 
 ### :gear: Installation
 
