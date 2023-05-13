@@ -1,8 +1,8 @@
 <div align="center">
 
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/440px-Meta_Platforms_Inc._logo.svg.png" alt="logo" width="400" height="auto" />
+<img src="https://th.bing.com/th/id/R.ce1b610b6ce7a92a69382007efb63b20?rik=JLsU1Wcqdv%2bGng&pid=ImgRaw&r=0" alt="logo" width="200" height="auto" />
 
-  <h1>META Messenger 2.0 with Next.js 13!</h1>
+<h1>Messenger Clone</h1>
 
   <p>
 Messenger Clone: Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher, (Message notifications and alerts, Tailwind animations and transition effects, File and image upload using Cloudinary CDN, File and image upload using Cloudinary CDN, Group chats and one-on-one messaging)
@@ -12,10 +12,10 @@ Messenger Clone: Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher,
 
 <a href="" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
 ![](https://img.shields.io/badge/Maintained-Yes-indigo)
-![](https://img.shields.io/github/forks/SashenJayathilaka/META-Messenger-Clone.svg)
-![](https://img.shields.io/github/stars/SashenJayathilaka/META-Messenger-Clone.svg)
-![](https://img.shields.io/github/issues/SashenJayathilaka/META-Messenger-Clone)
-![](https://img.shields.io/github/last-commit/SashenJayathilaka/META-Messenger-Clone)
+![](https://img.shields.io/github/forks/SashenJayathilaka/Messenger-Clone.svg)
+![](https://img.shields.io/github/stars/SashenJayathilaka/Messenger-Clone.svg)
+![](https://img.shields.io/github/issues/SashenJayathilaka/Messenger-Clone)
+![](https://img.shields.io/github/last-commit/SashenJayathilaka/Messenger-Clone)
 
 <h4>
     <a href="https://github.com/SashenJayathilaka/META-Messenger-Clone/blob/master/README.md">Documentation</a>
@@ -59,13 +59,15 @@ Messenger Clone: Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher,
     <li><a href="https://nextjs.org/">Next.js</a></li>
     <li><a href="https://reactjs.org/">React.js</a></li>
     <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+    <li><a href="https://www.prisma.io">Prisma</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://firebase.google.com">Redis</a></li>
+  <li><a href="https://firebase.google.com">Mongodb</a></li>
+  <li><a href="https://cloudinary.com/">Cloudinary</a></li>
   </ul>
 </details>
 
@@ -76,20 +78,29 @@ Messenger Clone: Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher,
         <td>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="" width="30" height="30" /></a>
         </td>
-                        <td>
+                <td>
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/183096870-fdf58e59-d78c-44f4-bd1c-f9033c16d907.png" alt="Google" width="30" height="30" /></a>
         </td>
                         <td>
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/179383376-874f547c-4e6f-4826-850e-706b009e7e2b.png" alt="" width="30" height="30" /></a>
         </td>
+                              <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/181918664-569af962-756c-438c-b350-294f042e6f61.png" alt="" width="30" height="30" /></a>
+        </td>
                         <td>
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/180462270-ea4a249c-627c-4479-9431-5c3fd25454c4.png" alt="" width="30" height="30" /></a>
         </td>
-                                            <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/204170976-0e5c6e2a-2b41-483d-adbd-d5d1e40b8d15.png" alt="" width="30" height="30" /></a>
+                                <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/185779974-a31a9f47-f8d3-42ea-b7f8-4a2971774615.png" alt="" width="30"height="30"/></a>
         </td>
-                                                  <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/212797809-959ef479-9eb3-4640-bc3c-76dd6c63ff9c.png" alt="" width="30" height="30" /></a>
+                                      <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/229775276-a7cb148b-7fbd-4334-a07f-f2223bc49f62.png" alt="" width="30"height="30"/></a>
+        </td>
+      <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/204170976-0e5c6e2a-2b41-483d-adbd-d5d1e40b8d15.png" alt="" width="30"height="30"/></a>
+        </td>
+        <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/214867309-7b59fa0e-c872-484e-bc8f-462896c54d2a.png" alt="" height="30"/></a>
         </td>
     </tr>
 </table>
@@ -98,8 +109,11 @@ Messenger Clone: Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher,
 
 ### :bangbang: Prerequisites
 
-- Sign up for a The Movie Database (TMDB) account <a href='https://www.themoviedb.org'>HERE</a>
 - Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
+- Sign up for a Cloudinary account <a href='https://cloudinary.com/'>HERE</a>
+- Sign up for a Google Cloud Platform <a href='https://console.cloud.google.com/'>HERE</a>
+- Sign up for a Meta for Developers <a href='https://developers.facebook.com'>HERE</a>
+- Get Lookup APi Key <a href='https://extreme-ip-lookup.com/'>HERE</a>
 
 <!-- Env Variables -->
 
