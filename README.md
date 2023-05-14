@@ -206,11 +206,11 @@ Install dependencies
 Clone the project
 
 ```bash
-  git clone https://github.com/SashenJayathilaka/META-Messenger-Clone.git
+  git clone https://github.com/SashenJayathilaka/Messenger-Clone.git
 ```
 
 ```bash
-cd META-Messenger-Clone
+cd Messenger-Clone
 ```
 
 Install dependencies
